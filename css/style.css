@@ -1,4 +1,10 @@
-/*body*/
 body{
-    background-color: black
-};
+    background-color: black;
+    color: white;
+}
+/*background_img*/
+#logo{
+    background-size: cover;
+    background-position:center;
+    margin:20vh 140vh;
+}
