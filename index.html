@@ -1,71 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>personal website</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <script
-      src="https://kit.fontawesome.com/083d8d2922.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <div class="custom-shape-divider-bottom-1712257331">
-      <svg
-        data-name="Layer 1"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1200 120"
-        preserveAspectRatio="none"
-      >
-        <path
-          d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
-          class="shape-fill"
-        ></path>
-      </svg>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Website</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/083d8d2922.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="custom-shape-divider-bottom-1712257331">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+    </svg>
+  </div>
+  <div id="header">
+    <video src="Logo/rrr.mp4" autoplay loop muted></video>
+  </div>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header_text">
+      <p>Front-End Developer</p>
+      <h1>
+        Hi, my name is <span>Reza</span> <br>
+        <a class="location" href="https://maps.app.goo.gl/Vd9EtsaEZrq3rKfx5"><i class="fas fa-location-dot"></i></a> Iran-Ahvaz
+      </h1>
     </div>
-    <div id="header">
-      <video src="Logo/rrr.mp4" autoplay root muted></video>
-    </div>
+  </div>
+  <div id="about">
     <div class="container">
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">services</a></li>
-          <li><a href="#">profile</a></li>
-          <li><a href="#">contact</a></li>
-        </ul>
-      </nav>
-      <div class="header_text">
-        <p>Front-End Developer</p>
-        <h1>
-          Hi,my name is <span>Reza</span> <br />
-          <a class="location" href="https://maps.app.goo.gl/Vd9EtsaEZrq3rKfx5"><i class="fa-solid fa-location-dot"></i></a> Iran-Ahvaz
-        </h1>
-      </div>
-    </div>
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="images/user-min.png" />
-          </div>
-          <div class="about-col-2">
-            <h1 class="sub-title">About me</h1>
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/user-min.png" alt="User Image">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
             <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque accusamus fuga quidem minima, voluptatem fugiat qui pariatur alias deleniti provident voluptate mollitia quis repudiandae ducimus harum aliquid libero? Ducimus, obcaecati suscipit quis quos commodi, nobis assumenda similique, recusandae exercitationem magnam illum cupiditate aliquam debitis. Tenetur accusamus quidem eos enim cumque!
             </p>
             <div class="tab-titles">
-              <p class="tab-links active">Skills</p>
-              <p class="tab-links">Experience</p>
-              <p class="tab-links">Education</p>
+              <p class="tab-links active" onclick="opentab('Skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
             </div>
-          </div>
+            
+            <!-- Skills -->
+            <div class="tab-contents active-skills" id="Skills">
+              <ul>
+                <li><span>Front-End Developer</span><br>Eating html/css for breakfast</li>
+                <li><span>Next.js</span><br>married with Next.js</li>
+                <li><span>Git</span><br>My besto freindo</li>
+              </ul>
+            </div>
+            
+            <!-- Experience -->
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li><span>2022-2023</span><br>I just started programming the website And I have no special experience, but I'm trying my best to be the best at it.</li>
+              </ul>
+            </div>
+            
+            <!-- Education -->
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li><span>Computer student</span><br>I am studying computer engineering in a semi-public university</li>
+                <li><span>2024</span><br>Bachelor of Computer Engineering</li>
+              </ul>
+            </div>
         </div>
       </div>
     </div>
-    <script src="js/index.js"></script>
-  </body>
+  </div>
+  <script src="js/index.js"></script>
+</body>
 </html>
