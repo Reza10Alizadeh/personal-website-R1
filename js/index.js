@@ -10,3 +10,4 @@ var tablinks = document.getElementsByClassName("tab-links");
               event.currentTarget.classList.add("active");
               document.getElementById(tabname).classList.add('active-skills')
             }
+            
